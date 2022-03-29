@@ -11,4 +11,3 @@ menuList.forEach((list) => {
     menuWindow.classList.remove('window-hidden');
   });
 });
-console.log(menuList);
