@@ -14,10 +14,76 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <nav class="nav">
-
+      <div class="logo-box">
+        <svg class="logo">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </div>
+      <ul class="nav-list">
+        <li class="list-item"><a class="item" href="#home">
+            <svg class="icon">
+              <use href="./images/icons.svg#home"></use>
+            </svg>
+          </a></li>
+        <li class="list-item"><a class="item" href="#about">
+            <svg class="icon aboutme">
+              <use href="./images/sprite(1).svg#about"></use>
+            </svg>
+          </a></li>
+        <li class="list-item"><a class="item" href="#skills">
+            <svg class="icon">
+              <use href="./images/sprite(1).svg#skills"></use>
+            </svg>
+          </a></li>
+        <li class="list-item"><a class="item" href="#projects">
+            <svg class="icon">
+              <use href="./images/icons.svg#work"></use>
+            </svg>
+          </a></li>
+        <li class="list-item"><a class="item" href="#contact">
+            <svg class="icon">
+              <use href="./images/icons.svg#contact"></use>
+            </svg>
+          </a></li>
+      </ul>
+      <div class="menu">
+        <svg class="menu-icon">
+          <use href="./images/icons.svg#menu"></use>
+        </svg>
+      </div>
     </nav>
+    <div class="menu-window">
+
+      <ul class="menu-list">
+        <li class="list-item"><a class="item" href="#home">
+            <svg class="icon">
+              <use href="./images/icons.svg#home"></use>
+            </svg><span>Home</span>
+          </a></li>
+        <li class="list-item"><a class="item" href="#about">
+            <svg class="icon aboutme">
+              <use href="./images/sprite(1).svg#about"></use>
+            </svg><span>about</span>
+          </a></li>
+        <li class="list-item"><a class="item" href="#skills">
+            <svg class="icon">
+              <use href="./images/sprite(1).svg#skills"></use>
+            </svg><span>skills</span>
+          </a></li>
+        <li class="list-item"><a class="item" href="#projects">
+            <svg class="icon">
+              <use href="./images/icons.svg#work"></use>
+            </svg><span>work</span>
+          </a></li>
+        <li class="list-item"><a class="item" href="#contact">
+            <svg class="icon">
+              <use href="./images/icons.svg#contact"></use>
+            </svg><span>contact</span>
+          </a></li>
+      </ul>
+    </div>
     <section class="header-container">
       <section class="image-container">
         <img class="img-forground" src="./images/profile-image.jpg" alt="image of Vamsi yellapu">
@@ -69,7 +135,7 @@
       </article>
     </section>
   </header>
-  <section class="about">
+  <section class="about" id="about">
     <div class="side-heading">
       <div class="info">
         <svg class="icon">
@@ -90,7 +156,7 @@
         learning.</p>
     </article>
   </section>
-  <section class="skills">
+  <section class="skills" id="skills">
     <div class="container">
       <div class="side-heading">
         <div class="info">
@@ -179,7 +245,7 @@
       </article>
     </div>
   </section>
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container">
       <div class="side-heading">
         <div class="info">
@@ -227,7 +293,7 @@
     </div>
 
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="side-heading">
         <div class="info">
@@ -268,6 +334,7 @@
   <footer class="footer">
     <span class="copyright">&copy; Vamsi Yellapu</span>
   </footer>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

@@ -28,6 +28,123 @@ h1 {
   font-weight: 100;
   white-space: nowrap;
 }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $primary-color;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 15px 50px -30px rgba($body-color, 0.25);
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+    .list-item {
+      padding: 1rem 1.5rem;
+      border-radius: 7px;
+
+      margin: 1rem;
+      transition: all 0.15s;
+    }
+    .item {
+      text-decoration: none;
+      color: $background-color;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      span {
+        margin-right: 3rem;
+      }
+      .aboutme {
+        transition: opacity 0.15s;
+        &:hover {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+  .icon {
+    fill: $background-color;
+  }
+  .logo-box {
+    background-color: $body-color;
+    padding: 1rem 2rem;
+  }
+  .logo {
+    fill: $background-color;
+    width: 5rem;
+    height: 5rem;
+  }
+  .menu {
+    margin-right: 2rem;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.1s;
+    cursor: pointer;
+    &:hover {
+      outline: 3px solid $body-color;
+    }
+  }
+  .menu-icon {
+    width: 4rem;
+    height: 4rem;
+    fill: $background-color;
+  }
+}
+.menu-window {
+  min-height: 100vh;
+  background-color: $primary-color;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  transition: all 0.15s;
+  .menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  .icon {
+    fill: $background-color;
+  }
+  .list-item {
+    padding: 1rem 2rem;
+    margin: 0.2rem 3rem;
+    transition: all 0.15s;
+    padding-right: 4rem;
+    &:hover {
+      background-color: rgba(241, 250, 238, 0.15);
+      border-radius: 10px;
+    }
+    .aboutme {
+      transition: all 0.15s;
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    color: $background-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    gap: 1.5rem;
+  }
+}
+.window-hidden {
+  display: flex;
+}
 .header-container {
   display: flex;
   justify-content: center;
@@ -405,6 +522,11 @@ h1 {
       }
     }
   }
+  .nav {
+    .menu {
+      display: none;
+    }
+  }
 }
 @media screen and (min-width: 992px) {
   .img-forground {
@@ -427,6 +549,18 @@ h1 {
     .skills-container {
       column-gap: 2rem;
       padding: 3rem 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+  }
+  .nav {
+    .nav-list {
+      display: none;
     }
   }
 }
