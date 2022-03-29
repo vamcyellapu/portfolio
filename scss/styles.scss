@@ -292,6 +292,8 @@ h1 {
       font-size: 3.6rem;
       font-weight: normal;
       color: $primary-color;
+      margin-left: 3rem;
+      margin-top: 2rem;
     }
     .details {
       max-width: 1366px;
@@ -339,6 +341,12 @@ h1 {
     }
     .call {
       @extend .email;
+      .icon-box {
+        background-color: rgba(31, 156, 240, 0.1);
+        .icon {
+          fill: #1f9cf0;
+        }
+      }
       .num {
         color: $body-color;
       }

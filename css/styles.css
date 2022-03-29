@@ -429,6 +429,8 @@ h1 {
   font-size: 3.6rem;
   font-weight: normal;
   color: #457b9d;
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
 
 .contact .contact-container .details {
@@ -497,6 +499,14 @@ h1 {
 .contact .contact-container .email a:hover, .contact .contact-container .call a:hover {
   color: #e63946;
   border-bottom: 1px solid #e63946;
+}
+
+.contact .contact-container .call .icon-box {
+  background-color: rgba(31, 156, 240, 0.1);
+}
+
+.contact .contact-container .call .icon-box .icon {
+  fill: #1f9cf0;
 }
 
 .contact .contact-container .call .num {
